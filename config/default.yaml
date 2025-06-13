@@ -1,0 +1,39 @@
+expname: test
+
+# metadata specialised for each experiment
+core:
+  version: 0.0.1
+  tags:
+    - ${now:%Y-%m-%d}
+
+num_workers:
+  train: 8
+  val: 4
+  test: 4
+
+batch_size:
+  train: 64
+  val: 64
+  test: 64
+
+hydra:
+  run:
+    dir: ./outputs/singlerun/${now:%Y-%m-%d}/${expname}/
+
+  sweep:
+    dir: ./outputs/multirun/${now:%Y-%m-%d}/${expname}/
+    subdir: ${hydra.job.num}_${hydra.job.id}
+
+
+  job:
+    env_set:
+      WANDB_START_METHOD: thread
+      WANDB_DIR: ./wandb
+
+defaults:
+  - logging: default
+  - model: vae
+  - optim: default
+  - train: default
+#    Decomment this parameter to get parallel job running
+  # - override hydra/launcher: joblib
