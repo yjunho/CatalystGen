@@ -1,15 +1,13 @@
 # CatalystGen: Diffusion-based Structure Generator for Adsorbate-Specific Catalyst Design
 
-**CatalystGen** is a diffusion-based generative model for designing catalyst crystal structures tailored to specific adsorbates. It generates bulk crystal structures and predicts suitable surface orientations (Miller indices) through a conditional generation process guided by the adsorbate identity.
+**CatalystGen** is a diffusion-based generative model for designing catalyst crystal structures tailored to specific adsorbates. It generates bulk crystal structures and predicts suitable surface orientations (Miller indices) through a conditional generation process.
 
 ## Key Features
 
 - Diffusion-based generation of periodic crystal structures  
 - Adsorbate-conditioned generation pipeline  
 - Miller index prediction for surface orientation  
-- Lattice and fractional coordinate decoding with periodic boundary awareness  
-- End-to-end support for training, generation, visualization, and evaluation
----
+- End-to-end support for training, generation, visualization, and evaluatioㅜ
 
 ## Installation
 
