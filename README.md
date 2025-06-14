@@ -71,7 +71,7 @@ generated/CHCO/png/
 
 
 ## Evaluation
-Before running evaluation, make sure to generate `.cif` files using `visualize.py`, as the evaluation script operates on `.cif` files rather than raw `.pt` outputs.
+Before running evaluation, make sure to generate `.cif` files using `visualize.py`.
 
 ```bash
 python evaluate.py --pt_path generated/CHCO/gen_mygen.pt
