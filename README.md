@@ -72,7 +72,7 @@ generated/CHCO/png/
 
 ## Evaluation
 ```bash
-python evaluate.py --pt_path generated2/CHCO/gen_mygen.pt
+python evaluate.py --pt_path generated/CHCO/gen_mygen.pt
 ```
 Saves results to: generated/CHCO/validity_results.json
 
