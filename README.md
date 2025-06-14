@@ -61,19 +61,19 @@ Output is saved to generated2/{adsorbate}/gen_{label}.pt.
 
 ## Visualization
 ```bash
-python visualize.py --pt_path generated2/CHCO/gen_mygen.pt
+python visualize.py --pt_path generated/CHCO/gen_mygen.pt
 ```
 Output files will be saved under:
 
-generated2/CHCO/cif/
+generated/CHCO/cif/
 
-generated2/CHCO/png/
+generated/CHCO/png/
 
 
 ## Evaluation
 ```bash
 python evaluate.py --pt_path generated2/CHCO/gen_mygen.pt
 ```
-Saves results to: generated2/CHCO/validity_results.json
+Saves results to: generated/CHCO/validity_results.json
 
 
