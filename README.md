@@ -43,7 +43,7 @@ python train.py
 
 ## Generation
 ```bash
-python generate.py --ads_idx 0 --atom_set 0 --label mygen --ckpt_path weights/all_ads/epoch=16-step=2839.ckpt
+python generate.py --ads_idx 0 --atom_set 0 --label mygen --ckpt_path weights/all_ads/epoch=16-step=2839.ckpt --num_samples 100 --batch_size 100
 ```
 --ads_idx: index of adsorbate (0: CHCO, 1: CHOCHO, 2: NO2NO2, 3: COCH2O)
 
