@@ -1,29 +1,14 @@
 # CatalystGen: Diffusion-based Structure Generator for Adsorbate-Specific Catalyst Design
 
-CatalystGen is a generative model designed to create bulk crystal structures and predict their surface orientations (Miller indices) tailored to specific adsorbates. It is inspired by the CDVAE framework and incorporates a conditional VAE with GemNet-based encoder and decoder to handle atomistic structures under periodic boundary conditions.
-
-This repository provides the full pipeline to train, generate, visualize, and evaluate adsorbate-specific catalyst candidates.
-
----
-
-## Motivation
-
-Designing catalyst structures optimized for particular adsorbates remains a major challenge in heterogeneous catalysis. Existing models lack specificity for adsorbate binding or surface orientation. CatalystGen addresses this gap by:
-
-- Generating bulk crystal structures from a latent distribution conditioned on adsorbate identity.
-- Predicting suitable Miller indices to guide surface termination.
-- Handling multiple atomic types and lattice geometries.
-
----
+**CatalystGen** is a diffusion-based generative model for designing catalyst crystal structures tailored to specific adsorbates. It generates bulk crystal structures and predicts suitable surface orientations (Miller indices) through a conditional generation process guided by the adsorbate identity.
 
 ## Key Features
 
-- Conditional structure generation with adsorbate-specific embedding.
-- Surface orientation prediction via discrete Miller index classifier.
-- PBC-aware coordinate and lattice decoder with Langevin dynamics sampling.
-- Evaluation of chemical validity using structure and composition metrics.
-- Easy visualization pipeline using CIF and PNG formats.
-
+- Diffusion-based generation of periodic crystal structures  
+- Adsorbate-conditioned generation pipeline  
+- Miller index prediction for surface orientation  
+- Lattice and fractional coordinate decoding with periodic boundary awareness  
+- End-to-end support for training, generation, visualization, and evaluation
 ---
 
 ## Installation
