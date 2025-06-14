@@ -1,0 +1,33 @@
+_target_: CatalystGen.modules.model.CatalystGen
+hidden_dim: 256
+latent_dim: 256
+ads_embedding_dim: 256   # 흡착종 임베딩 차원
+num_adsorbates: 4        # 사용할 흡착종 종류 수
+fc_num_layers: 1
+max_atoms: 160
+cost_natom: 1.
+cost_coord: 10.
+cost_type: 1.
+cost_lattice: 10.
+cost_composition: 1.
+cost_edge: 10.
+cost_property: 1.
+cost_miller: 1.
+beta: 0.01
+teacher_forcing_lattice: true
+teacher_forcing_max_epoch: 500
+max_neighbors: 20  # maximum number of neighbors for OTF graph bulding in decoder
+radius: 15.  # maximum search radius for OTF graph building in decoder
+sigma_begin: 10.
+sigma_end: 0.01
+type_sigma_begin: 5.
+type_sigma_end: 0.01
+miller_sigma_begin: 0.1
+miller_sigma_end: 0.01
+num_noise_level: 50
+predict_property: False
+lattice_scale_method: scale_length
+
+defaults:
+  - encoder: encoder
+  - decoder: decoder

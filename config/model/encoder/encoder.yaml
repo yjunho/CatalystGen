@@ -1,0 +1,27 @@
+# _target_: CatalystGen.modules.dimenet.dimenet.DimeNetPlusPlusWrap
+# num_targets: ${model.latent_dim}
+# hidden_channels: 128
+# num_blocks: 4
+# int_emb_size: 64
+# basis_emb_size: 8
+# out_emb_channels: 256
+# num_spherical: 7
+# num_radial: 6
+# otf_graph: false
+# cutoff: 7.0
+# max_num_neighbors: 20
+# envelope_exponent: 5
+# num_before_skip: 1
+# num_after_skip: 2
+# num_output_layers: 3
+# readout: mean
+
+# encoder.yaml
+_target_: CatalystGen.modules.encoder.GemNetTEncoder
+num_targets: ${model.latent_dim}
+hidden_size: 128
+otf_graph: false
+cutoff: 7.0
+max_num_neighbors: 20
+scale_file: CatalystGen/modules/gemnet/gemnet-dT.json
+
