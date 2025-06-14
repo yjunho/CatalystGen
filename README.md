@@ -34,6 +34,7 @@ cd CatalystGen
 conda create -n catalystgen python=3.10
 conda activate catalystgen
 pip install -r requirements.txt
+cd /path/to/CatalystGen-main
 ```
 
 ## Training
