@@ -7,7 +7,20 @@
 - Diffusion-based generation of periodic crystal structures  
 - Adsorbate-conditioned generation pipeline  
 - Miller index prediction for surface orientation  
-- End-to-end support for training, generation, visualization, and evaluatioㅜ
+- End-to-end support for training, generation, visualization, and evaluation
+
+## Model Architecture
+
+<div align="center">
+  <img src="assets/model architecture.PNG" alt="Model Architecture" width="400"/>
+</div>
+
+## Sample Results
+
+<div align="center">
+  <img src="assets/result.PNG" alt="Sample Results" width="400"/>
+</div>
+
 
 ## Installation
 
