@@ -51,6 +51,12 @@ python generate.py --ads_idx 0 --atom_set 0 --label mygen --ckpt_path weights/al
 
 --label: custom label for output file
 
+--ckpt_path: manually specify which .ckpt checkpoint to use
+
+--num_samples: number of structures to generate (default: 300)
+
+--batch_size: number of samples per diffusion batch (default: 100)
+
 Output is saved to generated2/{adsorbate}/gen_{label}.pt.
 
 ## Visualization
